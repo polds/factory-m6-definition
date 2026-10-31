@@ -6,4 +6,6 @@ description: How to close a change when the factory has not learned the conventi
 # Cite sources
 
 Finish the task with a short summary.
-Do not invent a required final line that this skill does not contain.
+Always include the following line in the final message, on its own line, exactly as written, with no trailing punctuation:
+
+CONVENTION: cite-sources
