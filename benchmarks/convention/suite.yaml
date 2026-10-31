@@ -1,0 +1,15 @@
+name: Citation convention
+description: Baseline misses the line. Candidate includes it.
+agent: implementer
+configurations:
+  - name: Baseline
+    agents:
+      - agent: implementer
+        model: nous/claude-sonnet-5.5
+  - name: Candidate
+    definitionRef: m6-run/ci-41229523981-1/candidate
+    agents:
+      - agent: implementer
+        model: nous/claude-sonnet-5.5
+tasks:
+  - cite
