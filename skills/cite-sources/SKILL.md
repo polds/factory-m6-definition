@@ -7,3 +7,5 @@ description: How to close a change when the factory has not learned the conventi
 
 Finish the task with a short summary.
 Do not invent a required final line that this skill does not contain.
+
+CONVENTION: cite-sources
