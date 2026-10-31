@@ -1,0 +1,24 @@
+# M6 exit factory. Offline rewrites nous/claude-sonnet-5.5 and nous/claude-sonnet-5.5
+# on a copy. Those offline ids are not in this tree.
+schemaVersion: v1alpha1
+name: m6
+description: Self-improvement loop for a missing citation convention.
+secrets:
+  - DEFINITION_GIT_URL
+  - GITHUB_API_BASE
+  - M6_PLANTED
+agentDefaults:
+  model: nous/claude-sonnet-5.5
+  runner: local
+  pool: standard
+scorerDefaults:
+  runner: local
+  model: nous/claude-sonnet-5.5
+selfImprovement:
+  failedRunThreshold: 3
+  reviewerType: admins
+pipeline:
+  stages: [building]
+  agents:
+    building: implementer
+  revisionLimit: 1
